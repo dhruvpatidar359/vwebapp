@@ -110,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
       decoration: BoxDecoration(
           color: Colors.transparent,
           image: DecorationImage(
-              image: AssetImage("images/1.jpg"), fit: BoxFit.cover)),
+              image: AssetImage("assets/images/1.jpg"), fit: BoxFit.cover)),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -274,7 +274,7 @@ class _MyHomePageState extends State<MyHomePage> {
       decoration: BoxDecoration(
           color: Colors.transparent,
           image: DecorationImage(
-              image: AssetImage("images/2.jpg"), fit: BoxFit.cover)),
+              image: AssetImage("assets/images/2.jpg"), fit: BoxFit.cover)),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.end,
@@ -344,7 +344,7 @@ class _MyHomePageState extends State<MyHomePage> {
       decoration: BoxDecoration(
           color: Colors.transparent,
           image: DecorationImage(
-              image: AssetImage("images/3.jpg"), fit: BoxFit.cover)),
+              image: AssetImage("assets/images/3.jpg"), fit: BoxFit.cover)),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -464,7 +464,7 @@ class _VideoAppState extends State<VideoApp> {
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.asset('example.mp4')
+    _controller = VideoPlayerController.asset('assets/example.mp4')
       ..initialize().then((_) {
         _controller.setLooping(true);
         _controller.play();
