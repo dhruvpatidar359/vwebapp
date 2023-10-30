@@ -466,8 +466,9 @@ class _VideoAppState extends State<VideoApp> {
     super.initState();
     _controller = VideoPlayerController.asset('assets/example.mp4')
       ..initialize().then((_) {
-        _controller.setLooping(true);
+        _controller.setVolume(0);
         _controller.play();
+        _controller.setLooping(true);
         // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
         setState(() {});
       });
